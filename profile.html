@@ -1,0 +1,108 @@
+<!-- 
+<?php
+session_start();
+
+require 'config.php';
+
+$user_id = $_SESSION['user_id'];
+
+$stmt = $pdo->prepare(
+"SELECT * FROM users WHERE id = ?"
+);
+
+$stmt->execute([$user_id]);
+
+$user = $stmt->fetch();
+<?= $user['full_name']; ?>
+?>
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Mon Profil - Rayhana Fragrance
+</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+<link href=
+"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="sticky-header">
+
+<div class="logo-container">
+
+<img src="assets/logo.png"
+class="site-logo"
+alt="Logo">
+
+<div class="logo">
+Rayhana Fragrance
+</div>
+
+</div>
+
+<nav>
+
+<a href="home.html">
+Home
+</a>
+
+<a href="products.html">
+Produits
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+</nav>
+
+</header>
+
+<div class="profile-container">
+
+<h1 class="section-title">
+Mon Profil
+</h1>
+
+<div class="feature">
+
+<p>
+Bienvenue sur
+Rayhana Fragrance ✨
+</p>
+
+<br>
+
+<p>
+Nom : Cliente Rayhana
+</p>
+
+<p>
+Email : cliente@rayhana.ma
+</p>
+
+<p>
+Ville : Maroc
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>

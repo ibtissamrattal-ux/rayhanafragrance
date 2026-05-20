@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Rayhana Fragrance
+</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+<link href=
+"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="sticky-header">
+
+<div class="logo-container">
+
+<img src="assets/logo.png"
+class="site-logo"
+alt="Logo">
+
+<div class="logo">
+Rayhana Fragrance
+</div>
+
+</div>
+
+<nav>
+
+<a href="home.html">
+Home
+</a>
+
+<a href="products.html">
+Homme
+</a>
+
+<a href="products.html">
+Femme
+</a>
+
+<a href="products.html">
+Unisexe
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+</nav>
+
+<div class="header-icons">
+
+<img src="assets/search-icon.png"
+class="header-icon"
+alt="Search">
+
+<div class="cart-box"
+onclick="location.href='cart.html'">
+
+<img src="assets/cart-icon.png"
+class="header-icon"
+alt="Cart">
+
+<span id="cart-count">
+0
+</span>
+
+</div>
+
+<img src="assets/user-icon.png"
+class="header-icon"
+onclick="location.href='profile.html'"
+alt="User">
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+
+Découvrez l'univers raffiné
+des parfums
+Rayhana Fragrance
+
+</h1>
+
+<a href="products.html"
+class="btn-shop">
+
+Shop Now
+
+</a>
+
+</div>
+
+<img src="assets/hero-perfume.jpg"
+alt="Parfum luxe">
+
+</section>
+
+<section class="categories">
+
+<h2>
+Nos Catégories
+</h2>
+
+<div class="category-grid">
+
+<div class="category-card"
+onclick="location.href='products.html'">
+
+<img src="assets/cat-homme.jpg"
+alt="Parfums Homme">
+
+<h3>
+Parfums Homme
+</h3>
+
+</div>
+
+<div class="category-card"
+onclick="location.href='products.html'">
+
+<img src="assets/cat-femme.jpg"
+alt="Parfums Femme">
+
+<h3>
+Parfums Femme
+</h3>
+
+</div>
+
+<div class="category-card"
+onclick="location.href='products.html'">
+
+<img src="assets/cat-unisexe.jpg"
+alt="Parfums Unisexe">
+
+<h3>
+Parfums Unisexe
+</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="why-us">
+
+<h2 class="section-title">
+Pourquoi choisir
+Rayhana Fragrance ?
+</h2>
+
+<div class="features">
+
+<div class="feature">
+✨ Parfums d'exception
+sélectionnés avec soin
+</div>
+
+<div class="feature">
+📦 Livraison rapide
+partout au Maroc
+</div>
+
+<div class="feature">
+💎 Prix compétitifs
+et qualité premium
+</div>
+
+<div class="feature">
+🔐 Paiement à la livraison
+</div>
+
+</div>
+
+</section>
+
+<section class="reviews">
+
+<h2 class="section-title">
+Ce que disent nos clientes
+</h2>
+
+<div class="review-card">
+
+⭐⭐⭐⭐⭐
+"Un parfum qui dure
+toute la journée,
+je suis conquise !"
+
+- Sarah
+
+</div>
+
+<div class="review-card">
+
+⭐⭐⭐⭐⭐
+"Emballage luxueux,
+parfait pour un cadeau."
+
+- Imane
+
+</div>
+
+</section>
+
+<section class="best-sellers">
+
+<h2 class="section-title">
+Best Sellers
+</h2>
+
+<div class="products-grid">
+
+<div class="product-card">
+
+<img src=
+"assets/femme-vanille-1.jpg"
+alt="Vanilla Rose">
+
+<h3>
+Vanilla Rose
+</h3>
+
+<p>
+499 DH
+</p>
+
+<button onclick="addToCart(1)">
+Ajouter au panier
+</button>
+
+</div>
+
+<div class="product-card">
+
+<img src=
+"assets/homme-oud-1.jpg"
+alt="Royal Oud">
+
+<h3>
+Royal Oud
+</h3>
+
+<p>
+699 DH
+</p>
+
+<button onclick="addToCart(2)">
+Ajouter au panier
+</button>
+
+</div>
+
+<div class="product-card">
+
+<img src=
+"assets/unisexe-musk-1.jpg"
+alt="Musk Elixir">
+
+<h3>
+Musk Elixir
+</h3>
+
+<p>
+549 DH
+</p>
+
+<button onclick="addToCart(3)">
+Ajouter au panier
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="footer-col">
+
+<h4>
+Rayhana Fragrance
+</h4>
+
+<p>
+Livraison partout
+au Maroc
+</p>
+
+<p>
+Paiement à la livraison
+</p>
+
+</div>
+
+<div class="footer-col">
+
+<h4>
+Contact
+</h4>
+
+<p>
+contact@rayhana.ma
+</p>
+
+<p>
++212 6 00 00 00 00
+</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

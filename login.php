@@ -1,0 +1,36 @@
+<?php
+session_start();
+if(!isset($_SESSION['user_id'])){
+
+    header("Location: login.php");
+    exit();
+
+}
+
+$user_id = $_SESSION['user_id'];
+
+require 'config.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+$stmt = $pdo->prepare("SELECT * FROM users WHERE email = ?");
+$stmt->execute([$email]);
+
+$user = $stmt->fetch();
+
+if ($user && $password == $user['password']) {
+
+$_SESSION['user_id'] = $user['id'];
+header("Location: home.html");
+exit;
+
+} else {
+
+echo "Email ou mot de passe incorrect";
+
+}
+}
+?>
